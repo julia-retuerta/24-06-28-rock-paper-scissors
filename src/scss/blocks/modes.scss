@@ -1,0 +1,40 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
+.modes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+  margin-top: 6.25rem;
+
+  @include responsive(laptop) {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6.25rem;
+    margin-top: 10rem;
+  }
+
+  &__type {
+    text-align: center;
+    padding: 1.875rem;
+    transition: 0.2s;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 1.875rem;
+  }
+
+  &__name {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}

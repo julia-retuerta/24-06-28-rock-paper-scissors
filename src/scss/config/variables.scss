@@ -1,10 +1,21 @@
 :root {
-  /* Variables CSS */
-  /* escribir aquí */
-  --primary-color: red;
+  --background-gradient: radial-gradient(circle at center, #1f3756, #141539);
+  --white-color: #ffffff;
+  --light-grey: #606e85;
+  --medium-blue: #3b4363;
+  --electric-blue: #2a45c2;
+
+  --border-blue: #5670f5;
+  --border-blue-shadow: #2a45c2;
+  --blue-glow: hsla(230, 89%, 65%, 0.6);
+
+  --border-yellow: #eb9f0e;
+  --border-yellow-shadow: #c76c1b;
+  --yellow-glow: hsla(39, 89%, 49%, 0.6);
+
+  --border-red: #db2e4d;
+  --border-red-shadow: #9d1634;
+  --red-glow: hsla(349, 71%, 52%, 0.6);
+
+  --inner-shadow: #e5e5f4;
 }
-
-/* Variables SASS */
-/* no usar estas */
-
-$primaryColor: red;

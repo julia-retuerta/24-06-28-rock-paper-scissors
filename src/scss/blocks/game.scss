@@ -1,0 +1,67 @@
+@use '../mixins/hover.scss' as *;
+
+.game {
+  width: 340px;
+  position: relative;
+  margin-top: 135px;
+  margin-inline: auto;
+
+  &__choice {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &--paper {
+      top: -35px;
+      left: -20px;
+      border: 15px solid var(--border-blue);
+      box-shadow: 0 5px var(--border-blue-shadow), inset 0 5px var(--inner-shadow);
+
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(0.9);
+          transition: 0.2s;
+          box-shadow: 0 5px var(--border-blue-shadow), inset 0 5px var(--inner-shadow), 0 0 20px 5px var(--blue-glow);
+        }
+      }
+    }
+
+    &--scissors {
+      top: -35px;
+      left: 220px;
+      border: 15px solid var(--border-yellow);
+      box-shadow: 0 5px var(--border-yellow-shadow), inset 0 5px var(--inner-shadow);
+
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(0.9);
+          transition: 0.2s;
+          box-shadow: 0 5px var(--border-yellow-shadow), inset 0 5px var(--inner-shadow),
+            0 0 20px 5px var(--yellow-glow);
+        }
+      }
+    }
+
+    &--rock {
+      top: 160px;
+      left: 100px;
+      border: 15px solid var(--border-red);
+      box-shadow: 0 5px var(--border-red-shadow), inset 0 5px var(--inner-shadow);
+
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(0.9);
+          transition: 0.2s;
+          box-shadow: 0 5px var(--border-red-shadow), inset 0 5px var(--inner-shadow), 0 0 20px 5px var(--red-glow);
+        }
+      }
+    }
+  }
+}
