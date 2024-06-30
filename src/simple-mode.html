@@ -35,19 +35,40 @@
       </div>
     </div>
 
-    <div class="game">
+    <div id="game-choices" class="game">
       <img src="./assets/images/bg-triangle.svg" alt="" />
 
-      <div class="game__choice game__choice--paper">
+      <div class="game__choice game__choice--paper" data-choice="paper">
         <img class="game__img" src="./assets/images/icon-paper.svg" alt="" />
       </div>
 
-      <div class="game__choice game__choice--scissors">
+      <div class="game__choice game__choice--scissors" data-choice="scissors">
         <img class="game__img" src="./assets/images/icon-scissors.svg" alt="" />
       </div>
 
-      <div class="game__choice game__choice--rock">
+      <div class="game__choice game__choice--rock" data-choice="rock">
         <img class="game__img" src="./assets/images/icon-rock.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="result__user">
+        <span class="result__user-text">Your Picked</span>
+        <div class="game__choice game__choice--result">
+          <img src="./assets/images/icon-paper.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="result__win-tie-lose">
+        <span class="result__win-tie-lose-text">YOU WIN</span>
+        <button class="result__button-play-again">PLAY AGAIN</button>
+      </div>
+
+      <div class="result__user">
+        <span class="result__user-text">PC Picked</span>
+        <div class="game__choice game__choice--result">
+          <img src="./assets/images/icon-paper.svg" alt="" />
+        </div>
       </div>
     </div>
 
