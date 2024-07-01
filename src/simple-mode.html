@@ -20,7 +20,7 @@
     <div class="global-score">
       <div class="global-score__container">
         <span class="global-score__user">YOU</span>
-        <span class="global-score__score">0</span>
+        <span id="you-points" class="global-score__score">0</span>
       </div>
 
       <div class="global-score__logo global-score__logo--simple">
@@ -31,7 +31,7 @@
 
       <div class="global-score__container">
         <span class="global-score__user">PC</span>
-        <span class="global-score__score">0</span>
+        <span id="pc-points" class="global-score__score">0</span>
       </div>
     </div>
 
@@ -39,35 +39,35 @@
       <img src="./assets/images/bg-triangle.svg" alt="" />
 
       <div class="game__choice game__choice--paper" data-choice="paper">
-        <img class="game__img" src="./assets/images/icon-paper.svg" alt="" />
+        <img class="game__img" src="./assets/images/icon-paper.svg" alt="icon paper" />
       </div>
 
       <div class="game__choice game__choice--scissors" data-choice="scissors">
-        <img class="game__img" src="./assets/images/icon-scissors.svg" alt="" />
+        <img class="game__img" src="./assets/images/icon-scissors.svg" alt="icon scissors" />
       </div>
 
       <div class="game__choice game__choice--rock" data-choice="rock">
-        <img class="game__img" src="./assets/images/icon-rock.svg" alt="" />
+        <img class="game__img" src="./assets/images/icon-rock.svg" alt="icon rock" />
       </div>
     </div>
 
     <div class="result">
       <div class="result__user">
         <span class="result__user-text">Your Picked</span>
-        <div class="game__choice game__choice--result">
-          <img src="./assets/images/icon-paper.svg" alt="" />
+        <div id="your-picked" class="game__choice game__choice--result">
+          <img id="your-picked-img" src="./assets/images/icon-paper.svg" alt="" />
         </div>
       </div>
 
       <div class="result__win-tie-lose">
-        <span class="result__win-tie-lose-text">YOU WIN</span>
-        <button class="result__button-play-again">PLAY AGAIN</button>
+        <span id="win-tie-lose" class="result__win-tie-lose-text">YOU WIN</span>
+        <button id="button-play-again" class="result__button-play-again">PLAY AGAIN</button>
       </div>
 
       <div class="result__user">
         <span class="result__user-text">PC Picked</span>
-        <div class="game__choice game__choice--result">
-          <img src="./assets/images/icon-paper.svg" alt="" />
+        <div id="pc-picked" class="game__choice game__choice--result">
+          <img id="pc-picked-img" src="./assets/images/icon-paper.svg" alt="" />
         </div>
       </div>
     </div>

@@ -37,6 +37,51 @@
       </div>
     </div>
 
+    <div id="game-choices" class="game">
+      <img src="./assets/images/bg-pentagon.svg" alt="" />
+
+      <div class="game__choice game__choice--paper" data-choice="paper">
+        <img class="game__img" src="./assets/images/icon-paper.svg" alt="icon paper" />
+      </div>
+
+      <div class="game__choice game__choice--scissors" data-choice="scissors">
+        <img class="game__img" src="./assets/images/icon-scissors.svg" alt="icon scissors" />
+      </div>
+
+      <div class="game__choice game__choice--rock" data-choice="rock">
+        <img class="game__img" src="./assets/images/icon-rock.svg" alt="icon rock" />
+      </div>
+
+      <div class="game__choice game__choice--lizard" data-choice="lizard">
+        <img class="game__img" src="./assets/images/icon-lizard.svg" alt="icon lizard" />
+      </div>
+
+      <div class="game__choice game__choice--spock" data-choice="spock">
+        <img class="game__img" src="./assets/images/icon-spock.svg" alt="icon spock" />
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="result__user">
+        <span class="result__user-text">Your Picked</span>
+        <div id="your-picked" class="game__choice game__choice--result">
+          <img id="your-picked-img" src="./assets/images/icon-paper.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="result__win-tie-lose">
+        <span id="win-tie-lose" class="result__win-tie-lose-text">YOU WIN</span>
+        <button id="button-play-again" class="result__button-play-again">PLAY AGAIN</button>
+      </div>
+
+      <div class="result__user">
+        <span class="result__user-text">PC Picked</span>
+        <div id="pc-picked" class="game__choice game__choice--result">
+          <img id="pc-picked-img" src="./assets/images/icon-paper.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
