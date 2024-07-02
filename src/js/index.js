@@ -113,18 +113,4 @@ gameChoicesElement.addEventListener('click', event => {
 //     (pcSelection === 'rock' && userSelection === 'scissors')
 // };
 
-// OBJETO DATE
 
-// const date = new Date();
-// console.log(date.getDay());
-
-// TIMERS
-
-// setInterval(() => {
-//   console.log('hola');
-// }, 2000);
-
-// setInterval(() => {
-//   const date = new Date();
-//   console.log(date.getSeconds());
-// }, 1000);
