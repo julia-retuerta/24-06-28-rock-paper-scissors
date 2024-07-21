@@ -31,6 +31,11 @@
           box-shadow: 0 5px var(--border-blue-shadow), inset 0 5px var(--inner-shadow), 0 0 20px 5px var(--blue-glow);
         }
       }
+
+      &-advanced {
+        top: 70px;
+        left: 250px;
+      }
     }
 
     &--scissors {
@@ -47,6 +52,11 @@
             0 0 20px 5px var(--yellow-glow);
         }
       }
+
+      &-advanced {
+        top: -40px;
+        left: 110px;
+      }
     }
 
     &--rock {
@@ -62,11 +72,16 @@
           box-shadow: 0 5px var(--border-red-shadow), inset 0 5px var(--inner-shadow), 0 0 20px 5px var(--red-glow);
         }
       }
+
+      &-advanced {
+        top: 240px;
+        left: 210px;
+      }
     }
 
     &--lizard {
       top: 240px;
-      left: 20px;
+      left: 15px;
       border: 15px solid var(--border-purple);
       box-shadow: 0 5px var(--border-purple-shadow), inset 0 5px var(--inner-shadow);
 
@@ -82,7 +97,7 @@
 
     &--spock {
       top: 70px;
-      left: -30px;
+      left: -40px;
       border: 15px solid var(--border-turquoise);
       box-shadow: 0 5px var(--border-turquoise-shadow), inset 0 5px var(--inner-shadow);
 
@@ -99,5 +114,9 @@
     &--result {
       position: static;
     }
+  }
+
+  &__img {
+    pointer-events: none;
   }
 }

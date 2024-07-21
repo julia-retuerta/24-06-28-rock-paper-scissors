@@ -16,7 +16,7 @@
     <title>Rock, paper, scissors - Advanced mode</title>
   </head>
 
-  <body>
+  <body data-mode="advanced">
     <div class="global-score">
       <div class="global-score__container">
         <span class="global-score__user">YOU</span>
@@ -40,15 +40,15 @@
     <div id="game-choices" class="game">
       <img src="./assets/images/bg-pentagon.svg" alt="" />
 
-      <div class="game__choice game__choice--paper" data-choice="paper">
+      <div class="game__choice game__choice--paper game__choice--paper-advanced" data-choice="paper">
         <img class="game__img" src="./assets/images/icon-paper.svg" alt="icon paper" />
       </div>
 
-      <div class="game__choice game__choice--scissors" data-choice="scissors">
+      <div class="game__choice game__choice--scissors game__choice--scissors-advanced" data-choice="scissors">
         <img class="game__img" src="./assets/images/icon-scissors.svg" alt="icon scissors" />
       </div>
 
-      <div class="game__choice game__choice--rock" data-choice="rock">
+      <div class="game__choice game__choice--rock game__choice--rock-advanced" data-choice="rock">
         <img class="game__img" src="./assets/images/icon-rock.svg" alt="icon rock" />
       </div>
 
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="result">
+    <div id="result" class="result hide">
       <div class="result__user">
         <span class="result__user-text">Your Picked</span>
         <div id="your-picked" class="game__choice game__choice--result">
